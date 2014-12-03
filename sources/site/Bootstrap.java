@@ -19,7 +19,7 @@ class Bootstrap {
                 throws IOException, ServletException {
                 if (target.startsWith("/datetime")) {
                     response.setHeader("Content-Type", "text/html");
-                    response.getWriter().write("<p>" + new Date());
+                    response.getWriter().write("<p><br>This is new version</br>" + new Date());
                     baseRequest.setHandled(true);
                 } else {
                     super.handle(target, baseRequest, request, response);
